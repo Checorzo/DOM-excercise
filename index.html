@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en" data-dark>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+  <title>DOM Excersice</title>
+  <link rel="stylesheet" href="./CSS/init.css">
+  <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+  <nav id="hamburguer-menu" class="menu">
+    <div class="expand" id="expand">
+      <span class="icon-expand"></span>
+    </div>
+    <ul class="list-container active" id="list-container">
+      <li><a class="seccion" href="#seccion1">Reloj Digital</a></li>
+      <li><a class="seccion" href="#seccion2">Mover circulo</a></li>
+      <li><a class="seccion" href="#seccion3">Countdown</a></li>
+      <li><a class="seccion" href="#seccion4">Responsive con JavaScript</a></li>
+      <li><a class="seccion" href="#seccion5">Responsive Tater</a></li>
+      <li><a class="seccion" href="#seccion6">Deteccion de la conexión</a></li>
+      <li><a class="seccion" href="#seccion7">Deteccion de la camara web</a></li>
+      <li><a class="seccion" href="#seccion8">Geolocalizacion</a></li>
+      <li><a class="seccion" href="#seccion9">Filtrar busqueda</a></li>
+      <li><a class="seccion" href="#seccion10">Sorteo Digital</a></li>
+      <li><a class="seccion" href="#seccion11">Slider Responsivo</a></li>
+      <li><a class="seccion" href="#seccion12">Video Inteligente</a></li>
+      <li><a class="seccion" href="#seccion13">Va;idación de Formulario</a></li>
+      <li><a class="seccion" href="#seccion14">Lector de pantalla</a></li>
+    </ul>
+  </nav>
+  <main>
+    <section id="seccion1" class="seccion1" data-scroll-spy>
+      <h2>Reloj Digital</h2>
+      <div id="reloj-container" class="reloj-container"></div>
+    </section>
+    <section id="seccion2" class="seccion2" data-scroll-spy>
+      <h2>Mover circulo</h2>
+      <!-- <canva class="lienzo"></canva> -->
+    </section>
+    <section id="seccion3" class="seccion3" data-scroll-spy>
+      <h2>Countdown</h2>
+    </section>
+    <section id="seccion4" class="seccion4" data-scroll-spy>
+      <h2>Responsive con JavaScript</h2>
+      <div id="youtube"></div>
+      <div id="gmaps"></div>
+    </section>
+    <section id="seccion5" class="seccion5" data-scroll-spy>
+      <h2>Responsive Taster</h2>
+      <form id="responsive-taster">
+        <p>
+        <input name="direccion" type="url" placeholder="URL" required>
+        </p>
+        <br> 
+        <p>
+        <input name="ancho" type="text" placeholder="Ancho" required>
+        </p>
+        <br> 
+        <p>
+        <input name="alto" type="text" placeholder="Alto" required>
+        </p>
+        <br> 
+        <p>
+        <input name="probar" type="submit" value="probar">
+        </p>
+        <p>
+        <input name="cerrar" type="button" value="cerrar">
+        </p>
+      </form>
+    </section>
+    <div></div>
+    <section id="seccion6" data-scroll-spy><h2>Deteccción de la conexción</h2></section>
+    <section id="seccion7" data-scroll-spy>
+      <h2>Deteccción de la camara web</h2>
+      <video id="stream" src=""></video>
+    </section>
+    <section id="seccion8" data-scroll-spy>
+      <h2>Geolocalizacion</h2>
+      <div id="geo-info"></div>
+    </section>
+    <section id="seccion9" data-scroll-spy>
+      <h2>Filtrar de busqueda</h2>
+      <input id="search-filter" type="search" placeholder="Buscar...">
+      <article class="cards">
+        <figure class="card">
+          <img src="https://loremflickr.com/200/200/nature" alt="Nature">
+          <figcaption>Nature</figcaption>
+        </figure>
+        <figure class="card">
+          <img src="https://loremflickr.com/200/200/animals" alt="Animals">
+          <figcaption>Animals</figcaption>
+        </figure>
+        <figure class="card">
+          <img src="https://loremflickr.com/200/200/arch" alt="Architecture">
+          <figcaption>Architecture</figcaption>
+        </figure>
+        <figure class="card">
+          <img src="https://loremflickr.com/200/200/people" alt="People">
+          <figcaption>People</figcaption>
+        </figure>
+        <figure class="card">
+          <img src="https://loremflickr.com/200/200/tech" alt="Tech">
+          <figcaption>Tech</figcaption>
+        </figure>
+        <figure class="card">
+          <img src="https://loremflickr.com/200/200/any" alt="Any">
+          <figcaption>Any</figcaption>
+        </figure>
+      </article>
+    </section>
+    <section id="seccion10" data-scroll-spy>
+      <h2>Sorteo Digital</h2>
+        <ul class="players">
+          <li class="player">JavaScript</li>
+          <li class="player">PHP</li>
+          <li class="player">JAVA</li>
+          <li class="player">C</li>
+          <li class="player">Python</li>
+          <li class="player">Ruby</li>
+          <li class="player">Go</li>
+          <li class="player">Visual Basic</li>
+          <li class="player">Rust</li>
+          <li class="player">Perl</li>
+        </ul>
+        <button id="winner-btn">Obtener ganadores</button>
+    </section>
+    <section id="seccion11" data-scroll-spy>
+      <h2>Slider responsivo</h2>
+      <div class="slider">
+        <div class="slider-slides">
+          <div class="slider-slide active">
+            <img src="https://placeimg.com/400/400/nature" alt="Naturaleza">
+          </div>
+          <div class="slider-slide">
+            <h4>2</h4>
+            <p>
+              Ipsum repellat quam quos nostrum praesentium? Incidunt ad ducimus repudiandae distinctio neque? Ex provident repudiandae optio natus possimus Deleniti corporis officia possimus distinctio fugit asperiores. Laborum porro repellendus aspernatur doloremque.
+            </p>
+            
+          </div>
+          <div class="slider-slide">
+            <img src="https://placeimg.com/400/400/people" alt="Naturaleza">
+          </div>
+          <div class="slider-slide">
+            <h4>4</h4>
+            <p>
+              Ipsum repellat quam quos nostrum praesentium? Incidunt ad ducimus repudiandae distinctio neque? Ex provident repudiandae optio natus possimus Deleniti corporis officia possimus distinctio fugit asperiores. Laborum porro repellendus aspernatur doloremque.
+            </p>
+            
+          </div>
+        </div>
+        <div class="slider-btns">
+          <a class="prev" href="#">&laquo;</a>
+          <a class="next" href="#">&raquo;</a>
+        </div>
+      <div>
+    </section>
+    <section id="seccion12" data-scroll-spy>
+       <h2>Video Inteligente</h2>
+       <video src="./assets/Maíz creciendo Time Lapse - 6 días.mp4" 
+                   class="smart-video" controls muted loop></video>
+    </section>
+    <section id="seccion13" data-scroll-spy>
+      <h2>Validación de Formulario</h2>
+      <form class="contact-form" action="" target="_blank">
+          <legend>Envianos tus comentarios</legend>
+          <input type="text" name="name" placeholder="Escribe tu nombre"
+          title="Nombre solo acepta letras y espacios en blanco"
+          pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
+          <input type="email" name="email" placeholder="Escribe tu email" 
+          title="Email incorecto" 
+          pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" required>
+          <input type="text" name="subject" placeholder="Asunto a tratar"
+          title="El asunto es requerido" required>
+          <textarea name="coments" rows="5" placeholder="Escribe tu comentario"
+          title="Tu comentario no debe exceder los 250 caracteres"
+          data-pattern=".{1,255}$" required>b</textarea>
+          <input type="submit" value="Enviar" title="Enviar">
+        <div class="contact-form-loader none">
+          <img src="assets/loader.svg" alt="Cargando">
+        </div>
+        <div class="contact-form-response none">
+          <p>Los datos han sido enviados</p>
+        </div>
+      </form>
+    </section>
+    <section id="seccion14">
+        <h2>Lector de pantalla</h2>
+      <form class="lector-pantalla">
+        <br>
+        <div class="lenguaje-options">
+          <label for="language-speaker">Eligue un lenguage</label>
+        <br>
+          <select id="language-speaker" name="language" title="Debes elegir una
+            opcion para continuar" required>
+          </select>  
+        </div>
+        <br>
+        <div class="speak-text-container">
+          <label for="text-area">Escribe tu texto</label>
+          <br> 
+          <textarea id="speak-text" name="text-area" rows="5"  title="Tu mensaje
+                        no debe ser mayor de 250 caracteres" placeholder="Escribe tu texto a leer" required></textarea>
+        </div> 
+        <br>
+        <div class="button-speaker">
+          <label for="speaker-button"></label>
+          <button type="button" id="speaker-button">Leer</button>
+        </div>
+      </form>
+    </section>
+  </main>
+    <div id="button-scroll" class="float-buttons active scroll-position" href="#seccion1"><span
+        class="arrow-up float-buttons-sizes">↑</span></div>
+    <div id="dark-mode" class="dark-mode float-buttons"><span class="dark-mode-icon">🌙</span></div>
+
+  <script src="./js/index.js" type="module"></script>
+</body>
+</html>
